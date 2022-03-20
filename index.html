@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ponder</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <header>
+    <h1>Ponder</h1>
+  </header>
+  <body onload="setupCookies()">
+
+    <div id="popup" class="table">
+      <div class="vertAlign"">
+        <p>Welcome to Ponder, a near-infinite question generator for developing personal anecdotes, tidbits, and half-ideas.</p>
+        <br>
+        <p>The more questions you answer, the more robust your idea portfolio becomes. Just click enter to move on to the next question.</p> 
+        <br>
+        <br>
+        <div class="closeButton" style="display: table; overflow: hidden;">
+            <div onclick="closePopup()" class="vertAlign">
+              <p>Get Started!</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="notpopup" class="table">
+      <div class="vertAlign">
+        <p id="question">This is a question</p>
+        <br>
+        <textarea id="answer" onkeyup="checkEnter()" rows="1" placeholder=""></textarea>
+        <br>
+        <br>
+        <div class="button" style="display: table; overflow: hidden; height:20px">
+            <div class="vertAlign">
+              <a href="results.html" target="_blank">See results</a>
+            </div>
+        </div>
+        <!--
+        <div id="ideaPortfolio">
+          <h1>Results</h1>
+          <table class="center">
+              <tr>
+                <th>Question</th>
+                <th>Your Answer</th>
+              </tr>
+              <tr>
+                <td>Answer 1</td>
+                <td>Answer 2</td>
+              </tr>
+              <tr>
+                <td>Answer 1</td>
+                <td>Answer 2</td>
+              </tr>
+          </table>
+        </div>
+        <br>
+        <br>
+        <button id="copyButton">
+          <p>Copy</p>
+        </button>-->
+      </div>
+    </div>
+    
+  </body>
+</html>

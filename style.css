@@ -1,0 +1,164 @@
+ * { 
+  margin: 0;
+  padding: 0 
+}
+
+html, body, div { 
+  height: 100%; 
+  width: 100%;
+}
+
+header{
+  align-self: center;
+  text-align: center;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: rgb(228, 228, 228);
+  padding:5px;
+}
+
+h1{
+  font-size: 20px;
+  color: rgb(2, 95, 2);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a,p{
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#popup {
+  background-color: white;
+  box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);
+  border-radius: 5px;
+  width: 80%;
+  height: 70%;
+  max-width: 600px;
+  padding: 16px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#notpopup {
+  display: none;
+  width: 90%;
+  height: 80%;
+  max-width: 600px;
+  padding: 16px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#results{
+  width: 90%;
+  height: 80%;
+  max-width: 600px;
+  padding: 16px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#answer{
+  width: 80%;
+  max-width: 600 px;
+  height: 50px;
+  background-color: transparent;
+  text-align: center;
+  overflow:hidden;
+  border-style: none;
+  resize:none;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#question,td,th{
+  color: rgb(2, 95, 2);
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+td { 
+  width: 70%;
+  padding: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+table{
+  border: 1px solid;
+}
+
+#ideaPortfolio{
+  height: 20%;
+  width:80%; 
+  max-width: 600 px;
+  margin-left:auto; 
+  margin-right:auto;
+  background-color: rgb(228, 228, 228);
+  padding: 5px;
+}
+
+textarea {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(61, 61, 61);
+  padding: 10px;
+  border-style: none;
+  outline: none;
+  -webkit-mask-image: linear-gradient(to top, black 30%, transparent 100%);
+  mask-image: linear-gradient(to top, black 30%, transparent 100%);
+  overflow-y: scroll;
+}
+
+.center{
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+#nextButton{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 3px;
+  border-style: none;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 25%);
+}
+
+#copyButton{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 3px;
+  border-style: none;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 25%);
+}
+
+.table{
+  display: table; 
+  overflow: hidden;
+}
+
+.vertAlign{
+  display: table-cell; 
+  vertical-align: middle;
+  text-align: middle;
+}
+
+.closeButton {
+  height: 10%;
+  background-color: rgb(228, 228, 228);
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 25%);
+}
+
