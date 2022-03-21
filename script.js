@@ -31,8 +31,6 @@ function setupCookies(){
     question=0;
     if (typeof getCookie("question") === 'undefined' || getCookie("question") == ""){
       alert("Oops, cookies are not working properly on your browser! Your results will not be stored when you leave this page.");
-    }else{
-      alert("Cookies are set up properly, you are at question "+question);
     }
   }
 }
@@ -42,11 +40,11 @@ function nextQuestion(){
   setCookie("results",getCookie("results").concat(result.trim()));
   setCookie("question",(question+1));
   question++;
-  if(possibleQuestions.length>question){         document.getElementById("question").innerHTML=possibleQuestions[question];
+  if(possibleQuestions.length>question){         document.getElementById("question");
   }else{
     setCookie("question",0);
     question=0;
-    document.getElementById("question").innerHTML=possibleQuestions[0];
+  document.getElementById("question").innerHTML=possibleQuestions[0];
   }
 }
 
