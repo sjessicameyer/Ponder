@@ -25,15 +25,13 @@ function setCookie(cname, cvalue) {
 }
 
 function setupCookies(){
-  let question = getCookie("question");
-  if (typeof question === 'undefined' || question == ""){
+  if (typeof getCookie("question") === 'undefined' || getCookie("question") == ""){
     setCookie("question", 0);
-    let question = getCookie("question");
-    if (typeof question === 'undefined' || question == ""){
+    if (typeof getCookie("question") === 'undefined' || getCookie("question") == ""){
       alert("Oops, cookies are not working properly on your browser! Your results will not be stored when you leave this page.")
       question = 0;
     }else{
-      alert("Cookies are set up properly");
+      alert("Cookies are set up properly, you are at question "+question);
     }
   }
 }
@@ -41,11 +39,11 @@ function setupCookies(){
 function nextQuestion(){
   var result = possibleQuestions[question] + "|" + document.getElementById("answer").value.trim() + "|";
   setCookie("results",getCookie("results").concat(result.trim()));
-  setCookie("question",(parseInt(getCookie("question"))+1));
+  setCookie("question",(question+1));
   question++;
   if(possibleQuestions.length>question){         document.getElementById("question").innerHTML=possibleQuestions[question];
   }else{
-    setCookie("question");
+    setCookie("question",0);
     question=0;
     document.getElementById("question").innerHTML=possibleQuestions[0];
   }
