@@ -32,6 +32,8 @@ function setupCookies(){
     if (typeof question === 'undefined' || question == ""){
       alert("Oops, cookies are not working properly on your browser! Your results will not be stored when you leave this page.")
       question = 0;
+    }else{
+      alert("Cookies are set up properly");
     }
   }
 }
